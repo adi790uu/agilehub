@@ -3,8 +3,7 @@ import { z } from 'zod'
 import jwt from 'jsonwebtoken'
 import { TRPCError } from '@trpc/server'
 import { isLoggedIn } from '../middleware/user'
-
-const SECRET = 'Wassupdawg'
+import { SECRET } from '..'
 
 export const userRouter = router({
   signup: publicProcedure

@@ -12,9 +12,10 @@ const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const user_1 = require("./routers/user");
 const cors_1 = __importDefault(require("cors"));
 const project_1 = require("./routers/project");
-exports.SECRET = 'Wassupdawg';
-mongoose_1.default.connect('mongodb+srv://adi790:adi790123csgo@adicluster.xrul8vw.mongodb.net/agilehub' ||
-    '');
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
+exports.SECRET = process.env.SECRET;
+mongoose_1.default.connect(process.env.MONGO_URI || '');
 const appRouter = (0, trpc_1.router)({
     user: user_1.userRouter,
     project: project_1.projectRouter,

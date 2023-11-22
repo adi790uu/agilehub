@@ -1,9 +1,5 @@
 import { publicProcedure, router } from '../trpc'
 import { z } from 'zod'
-import jwt from 'jsonwebtoken'
-import { TRPCError } from '@trpc/server'
-import { isLoggedIn } from '../middleware/user'
-import mongoose from 'mongoose'
 
 export const projectRouter = router({
   createProject: publicProcedure

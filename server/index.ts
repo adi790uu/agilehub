@@ -6,13 +6,13 @@ import jwt from 'jsonwebtoken'
 import { userRouter } from './routers/user'
 import cors from 'cors'
 import { projectRouter } from './routers/project'
+import dotenv from 'dotenv'
 
-export const SECRET = 'Wassupdawg'
+dotenv.config()
 
-mongoose.connect(
-  'mongodb+srv://adi790:adi790123csgo@adicluster.xrul8vw.mongodb.net/agilehub' ||
-    '',
-)
+export const SECRET = process.env.SECRET
+
+mongoose.connect(process.env.MONGO_URI || '')
 
 const appRouter = router({
   user: userRouter,

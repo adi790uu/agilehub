@@ -18,7 +18,7 @@ const zod_1 = require("zod");
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const server_1 = require("@trpc/server");
 const user_1 = require("../middleware/user");
-const SECRET = 'Wassupdawg';
+const __1 = require("..");
 exports.userRouter = (0, trpc_1.router)({
     signup: trpc_1.publicProcedure
         .input(zod_1.z.object({
@@ -39,7 +39,7 @@ exports.userRouter = (0, trpc_1.router)({
             console.log(response);
             const userId = response._id;
             //@ts-ignore
-            const token = jsonwebtoken_1.default.sign({ userId: userId }, SECRET, {
+            const token = jsonwebtoken_1.default.sign({ userId: userId }, __1.SECRET, {
                 expiresIn: '48h',
             });
             console.log(token);
@@ -64,7 +64,7 @@ exports.userRouter = (0, trpc_1.router)({
             throw new server_1.TRPCError({ code: 'UNAUTHORIZED' });
         }
         //@ts-ignore
-        const token = jsonwebtoken_1.default.sign({ userId: opts.ctx.userId }, SECRET, {
+        const token = jsonwebtoken_1.default.sign({ userId: opts.ctx.userId }, __1.SECRET, {
             expiresIn: '1h',
         });
         return {
