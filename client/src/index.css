@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Exo+2:ital@1&family=Nunito:wght@400;500&family=Ubuntu:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

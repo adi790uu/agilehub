@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc && nodemon ./dist/index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/server": "^10.43.6",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.16",
+    "@types/jsonwebtoken": "^9.0.5"
+  }
+}
