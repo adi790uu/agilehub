@@ -33,7 +33,7 @@ function App() {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: 'http://localhost:3000',
+          url: 'https://agilehub-backend.onrender.com',
 
           async headers() {
             return {
