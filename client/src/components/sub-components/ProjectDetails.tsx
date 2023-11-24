@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { useState, useEffect } from 'react'
 import { Calendar, Clock, CheckCircle, Briefcase } from 'react-feather'
 

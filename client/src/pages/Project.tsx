@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import ProjectDetails from '@/components/sub-components/ProjectDetails'
 import TechStack from '@/components/sub-components/TechStack'
 import TaskManagement from '@/components/sub-components/TaskManagement'

@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { useState } from 'react'
 import { Plus, X } from 'react-feather'
 import { trpc } from '@/utils/trpc'

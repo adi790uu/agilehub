@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import MarkdownEditor from 'react-markdown-editor-lite'

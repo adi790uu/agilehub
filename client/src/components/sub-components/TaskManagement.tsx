@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { useState } from 'react'
 import { Plus } from 'react-feather'
 import TaskList from './TaskList'

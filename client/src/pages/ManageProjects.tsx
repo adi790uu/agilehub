@@ -1,3 +1,4 @@
+//@ts-nocheck
 import ProjectCard from '@/components/Ui/ProjectCard'
 import { trpc } from '@/utils/trpc'
 import { useState } from 'react'

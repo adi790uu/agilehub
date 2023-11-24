@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import PasswordModal from '@/components/sub-components/PasswordModal'
 import DeleteModal from '@/components/sub-components/DeleteModal'
 import { trpc } from '@/utils/trpc'

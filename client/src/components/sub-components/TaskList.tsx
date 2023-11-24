@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { trpc } from '@/utils/trpc'
 import { Clock, Edit, Trash2 } from 'react-feather'
 

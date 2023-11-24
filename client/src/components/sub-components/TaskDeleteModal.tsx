@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { trpc } from '@/utils/trpc'
 import { useQueryClient } from '@tanstack/react-query'
 

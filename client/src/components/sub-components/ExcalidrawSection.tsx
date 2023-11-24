@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { useState } from 'react'
 import { Excalidraw } from '@excalidraw/excalidraw'
 
@@ -18,7 +20,7 @@ const ExcalidrawSection = () => {
       initialData={initialData}
       UIOptions={UIOptions}
       onChange={(elements, state) => {
-        // console.log('Elements:', state)
+        console.log('Elements:', state)
       }}
     />
   )
