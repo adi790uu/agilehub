@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install && tsc",
-    "start": "node ./dist/index"
+    "build": "tsc",
+    "start": "node ./dist/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.16",
     "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.9.5",
     "ts-node": "^10.9.1",
     "tsc": "^2.0.4",
     "typescript": "^5.3.2"
