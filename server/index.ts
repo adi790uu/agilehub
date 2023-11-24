@@ -12,7 +12,9 @@ dotenv.config()
 
 export const SECRET = process.env.SECRET
 
-mongoose.connect(process.env.MONGO_URI || '')
+mongoose.connect(
+  'mongodb+srv://adi790:adi790123csgo@adicluster.xrul8vw.mongodb.net/agilehub',
+)
 
 const appRouter = router({
   user: userRouter,
